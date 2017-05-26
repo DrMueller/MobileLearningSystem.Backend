@@ -1,0 +1,9 @@
+C:\MyGit\Personal\MobileLearningSystem\MobileLearningSystem.Backend\Mmu.Mls.WebApi\bin\Debug\netcoreapp1.1\Mmu.Mls.WebApi.deps.json
+C:\MyGit\Personal\MobileLearningSystem\MobileLearningSystem.Backend\Mmu.Mls.WebApi\bin\Debug\netcoreapp1.1\Mmu.Mls.WebApi.runtimeconfig.json
+C:\MyGit\Personal\MobileLearningSystem\MobileLearningSystem.Backend\Mmu.Mls.WebApi\bin\Debug\netcoreapp1.1\Mmu.Mls.WebApi.runtimeconfig.dev.json
+C:\MyGit\Personal\MobileLearningSystem\MobileLearningSystem.Backend\Mmu.Mls.WebApi\bin\Debug\netcoreapp1.1\Mmu.Mls.WebApi.dll
+C:\MyGit\Personal\MobileLearningSystem\MobileLearningSystem.Backend\Mmu.Mls.WebApi\bin\Debug\netcoreapp1.1\Mmu.Mls.WebApi.pdb
+C:\MyGit\Personal\MobileLearningSystem\MobileLearningSystem.Backend\Mmu.Mls.WebApi\obj\Debug\netcoreapp1.1\Mmu.Mls.WebApi.csprojResolveAssemblyReference.cache
+C:\MyGit\Personal\MobileLearningSystem\MobileLearningSystem.Backend\Mmu.Mls.WebApi\obj\Debug\netcoreapp1.1\Mmu.Mls.WebApi.AssemblyInfo.cs
+C:\MyGit\Personal\MobileLearningSystem\MobileLearningSystem.Backend\Mmu.Mls.WebApi\obj\Debug\netcoreapp1.1\Mmu.Mls.WebApi.dll
+C:\MyGit\Personal\MobileLearningSystem\MobileLearningSystem.Backend\Mmu.Mls.WebApi\obj\Debug\netcoreapp1.1\Mmu.Mls.WebApi.pdb
