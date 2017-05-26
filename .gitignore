@@ -3,6 +3,8 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+!/Mmu.Mls.WebServices/bin/Release/netcoreapp1.1
+
 # User-specific files
 *.suo
 *.user
