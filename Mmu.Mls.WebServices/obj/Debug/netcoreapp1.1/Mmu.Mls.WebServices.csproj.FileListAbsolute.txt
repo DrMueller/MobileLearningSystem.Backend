@@ -1,8 +1,0 @@
-C:\MyGit\Personal\MobileLearningSystem\MobileLearningSystem.Backend\Mmu.Mls.WebServices\bin\Debug\netcoreapp1.1\Mmu.Mls.WebServices.deps.json
-C:\MyGit\Personal\MobileLearningSystem\MobileLearningSystem.Backend\Mmu.Mls.WebServices\bin\Debug\netcoreapp1.1\Mmu.Mls.WebServices.runtimeconfig.json
-C:\MyGit\Personal\MobileLearningSystem\MobileLearningSystem.Backend\Mmu.Mls.WebServices\bin\Debug\netcoreapp1.1\Mmu.Mls.WebServices.runtimeconfig.dev.json
-C:\MyGit\Personal\MobileLearningSystem\MobileLearningSystem.Backend\Mmu.Mls.WebServices\bin\Debug\netcoreapp1.1\Mmu.Mls.WebServices.dll
-C:\MyGit\Personal\MobileLearningSystem\MobileLearningSystem.Backend\Mmu.Mls.WebServices\bin\Debug\netcoreapp1.1\Mmu.Mls.WebServices.pdb
-C:\MyGit\Personal\MobileLearningSystem\MobileLearningSystem.Backend\Mmu.Mls.WebServices\obj\Debug\netcoreapp1.1\Mmu.Mls.WebServices.AssemblyInfo.cs
-C:\MyGit\Personal\MobileLearningSystem\MobileLearningSystem.Backend\Mmu.Mls.WebServices\obj\Debug\netcoreapp1.1\Mmu.Mls.WebServices.dll
-C:\MyGit\Personal\MobileLearningSystem\MobileLearningSystem.Backend\Mmu.Mls.WebServices\obj\Debug\netcoreapp1.1\Mmu.Mls.WebServices.pdb
