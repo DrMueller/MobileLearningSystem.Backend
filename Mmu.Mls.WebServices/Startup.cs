@@ -26,7 +26,7 @@ namespace Mmu.Mls.WebServices
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            //app.UseCors("All");
+            app.UseCors("All");
             MiddlewareConfiguration.ConfigureMiddlewares(app);
 
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
@@ -40,17 +40,18 @@ namespace Mmu.Mls.WebServices
         {
             AppSettingsConfiguration.ConfigureAppSettings(services, Configuration);
 
-            //services.AddCors(
-            //    options =>
-            //        {
-            //            options.AddPolicy(
-            //                "All",
-            //                builder =>
-            //                    builder.AllowAnyOrigin()
-            //                        .AllowAnyMethod()
-            //                        .AllowAnyHeader()
-            //                        .AllowCredentials());
-            //        });
+            services.AddCors(
+                options =>
+                    {
+                        options.AddPolicy(
+                            "All",
+                            builder =>
+                                builder.AllowAnyOrigin()
+                                    .AllowAnyMethod()
+                                    .AllowAnyHeader()
+                                    .AllowCredentials()
+                                    .WithOrigins("http://mlswebui.azurewebsites.net"));
+                    });
 
             // Add framework services.
             services.AddMvc();
