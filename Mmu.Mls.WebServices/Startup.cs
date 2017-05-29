@@ -49,8 +49,7 @@ namespace Mmu.Mls.WebServices
                                 builder.AllowAnyOrigin()
                                     .AllowAnyMethod()
                                     .AllowAnyHeader()
-                                    .AllowCredentials()
-                                    .WithOrigins("http://mlswebui.azurewebsites.net"));
+                                    .AllowCredentials());
                     });
 
             // Add framework services.
