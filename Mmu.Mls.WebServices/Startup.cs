@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -26,6 +27,8 @@ namespace Mmu.Mls.WebServices
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+            Trace.Write("Hello World");
+
             app.UseCors("All");
             MiddlewareConfiguration.ConfigureMiddlewares(app);
 
