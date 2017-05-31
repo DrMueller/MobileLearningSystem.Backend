@@ -47,19 +47,20 @@ namespace Mmu.Mls.WebServices.Infrastructure.Middlewares
             response.ContentType = "application/json";
             response.StatusCode = (int)code;
 
-            Debug.WriteLine(exception.Message);
+            Trace.TraceError(exception.Message);
+            //Debug.WriteLine(exception.Message);
 
-            await response.WriteAsync(
-                JsonConvert.SerializeObject(
-                    new
-                    {
-                        error = new
-                        {
-                            message = exception.Message,
-                            name = exception.GetType().Name,
-                            stack = exception.StackTrace
-                        }
-                    })).ConfigureAwait(false);
+            //await response.WriteAsync(
+            //    JsonConvert.SerializeObject(
+            //        new
+            //        {
+            //            error = new
+            //            {
+            //                message = exception.Message,
+            //                name = exception.GetType().Name,
+            //                stack = exception.StackTrace
+            //            }
+            //        })).ConfigureAwait(false);
         }
     }
 }
