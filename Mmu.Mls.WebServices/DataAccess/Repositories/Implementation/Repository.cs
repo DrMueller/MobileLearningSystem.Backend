@@ -13,6 +13,8 @@ namespace Mmu.Mls.WebServices.DataAccess.Repositories.Implementation
     {
         private readonly IDocumentService _documentClientService;
 
+        private static string ModelTypeName => typeof(TModel).Name;
+
         public Repository(IDocumentService documentClientService)
         {
             _documentClientService = documentClientService;
@@ -35,6 +37,7 @@ namespace Mmu.Mls.WebServices.DataAccess.Repositories.Implementation
                 () =>
                     {
                         var qry = _documentClientService.QueryDocuments<TModel>().Where(predicate);
+                        qry = qry.Where(f => f.TypeName == ModelTypeName);
                         var result = qry.ToList();
                         return result;
                     });

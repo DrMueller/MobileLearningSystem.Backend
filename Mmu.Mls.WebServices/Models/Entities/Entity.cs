@@ -6,5 +6,7 @@ namespace Mmu.Mls.WebServices.Models.Entities
     {
         [JsonProperty("id")]
         public string Id { get; set; }
+
+        public string TypeName => GetType().Name;
     }
 }
