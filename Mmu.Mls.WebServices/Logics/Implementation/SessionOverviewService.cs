@@ -21,7 +21,7 @@ namespace Mmu.Mls.WebServices.Logics.Implementation
         public async Task<IReadOnlyCollection<SessionOverviewEntry>> LoadOverviewAsync()
         {
             var sessionRepo = _repositoryFactory.CreateRepository<Session>();
-            var allSessions = await sessionRepo.LoadAllAsync();
+            var allSessions = await sessionRepo.GetAllAsync();
 
             var result = _mapper.Map<List<SessionOverviewEntry>>(allSessions);
             return result;

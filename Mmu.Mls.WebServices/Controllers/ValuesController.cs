@@ -13,7 +13,7 @@ namespace Mmu.Mls.WebServices.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "Hello Again" };
+            return new[] { "value1", "Hello Again", "Hello 3" };
         }
 
         // GET api/values/5

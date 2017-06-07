@@ -21,7 +21,7 @@ namespace Mmu.Mls.WebServices.Logics.Implementation
         public async Task<IReadOnlyCollection<FactOverviewEntry>> LoadOverviewAsync()
         {
             var factRepo = _repositoryFactory.CreateRepository<Fact>();
-            var allfacts = await factRepo.LoadAllAsync();
+            var allfacts = await factRepo.GetAllAsync();
             var result = _mapper.Map<List<FactOverviewEntry>>(allfacts);
 
             return result;

@@ -25,13 +25,13 @@ namespace Mmu.Mls.WebServices.DataAccess.Repositories.Implementation
             await _documentClientService.DeleteDocumentAsync(id);
         }
 
-        public async Task<IReadOnlyCollection<TModel>> LoadAllAsync()
+        public async Task<IReadOnlyCollection<TModel>> GetAllAsync()
         {
-            var result = await LoadAsync(f => true);
+            var result = await GetAsync(f => true);
             return result;
         }
 
-        public async Task<IReadOnlyCollection<TModel>> LoadAsync(Expression<Func<TModel, bool>> predicate)
+        public async Task<IReadOnlyCollection<TModel>> GetAsync(Expression<Func<TModel, bool>> predicate)
         {
             return await Task.Run<IReadOnlyCollection<TModel>>(
                 () =>
@@ -45,7 +45,7 @@ namespace Mmu.Mls.WebServices.DataAccess.Repositories.Implementation
 
         public async Task<TModel> LoadByIdAsync(string id)
         {
-            var models = await LoadAsync(f => f.Id == id);
+            var models = await GetAsync(f => f.Id == id);
             var result = models.FirstOrDefault();
 
             return result;
